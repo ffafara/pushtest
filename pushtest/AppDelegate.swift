@@ -35,11 +35,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: NSData) {
-        println("Got token data! (deviceToken)")
+        var characterSet: NSCharacterSet = NSCharacterSet( charactersInString: "<>" )
+        
+        var deviceTokenString: String = ( deviceToken.description as NSString )
+            .stringByTrimmingCharactersInSet( characterSet )
+            .stringByReplacingOccurrencesOfString( " ", withString: "" ) as String
+        println("Got device token:")
+        println( deviceTokenString )
+        
     }
 
     func application(application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: NSError) {
-        println("Couldn’t register: (error)")
+        println("Couldn’t register:")
+        println(error.localizedDescription)
     }
 
     func applicationWillResignActive(application: UIApplication) {
