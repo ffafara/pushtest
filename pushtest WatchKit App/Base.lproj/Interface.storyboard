@@ -37,9 +37,42 @@
                                 <label alignment="center" text="Glance view" id="vnT-TY-gUW"/>
                             </items>
                         </group>
-                        <group alignment="left" id="uCw-4Q-Ouw"/>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <group width="1" alignment="left" id="BXy-Kn-LF8">
+                                    <items>
+                                        <label alignment="left" text="EST" id="FYi-YS-h39"/>
+                                        <label alignment="right" text="EST Time" id="yi9-Kk-EXO"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="l10-P8-dwx">
+                                    <items>
+                                        <label alignment="left" text="CST" id="uQq-iC-K5M"/>
+                                        <label alignment="right" text="CST Time" id="oxg-K1-kpn"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="VOA-Tx-mXJ">
+                                    <items>
+                                        <label alignment="left" text="MST" id="eOI-PD-Dsq"/>
+                                        <label alignment="right" text="MST Time" id="f4R-3c-lBS"/>
+                                    </items>
+                                </group>
+                                <group width="1" alignment="left" id="RUP-1z-uS8">
+                                    <items>
+                                        <label alignment="left" text="GMT" id="ryg-fW-LV6"/>
+                                        <label alignment="right" text="GMT Time" id="Mgl-eO-Q1d"/>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
                     </items>
                     <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                    <connections>
+                        <outlet property="cstLabel" destination="oxg-K1-kpn" id="alr-wJ-gM5"/>
+                        <outlet property="estLabel" destination="yi9-Kk-EXO" id="mE2-e8-Txm"/>
+                        <outlet property="gmtLabel" destination="Mgl-eO-Q1d" id="yN7-Rz-RJg"/>
+                        <outlet property="mstLabel" destination="f4R-3c-lBS" id="rvF-xQ-ufl"/>
+                    </connections>
                 </glanceController>
             </objects>
             <point key="canvasLocation" x="235" y="672"/>
