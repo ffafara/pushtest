@@ -1,0 +1,9 @@
+{
+    "aps": {
+        "alert": {
+            "body": "You have items to fetch",
+            "title": "New request"
+        },
+        "category": "myCategory"
+    },
+}
